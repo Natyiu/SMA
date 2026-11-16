@@ -55,7 +55,7 @@ export default function Pricing() {
               {" "}
             </ul>
             {" "}
-            <a href="https://smbmarket.com/#pricing-plans" className="btn btn-primary btn-lg">Start free trial</a>
+            <a href="/start" className="btn btn-primary btn-lg">Start free trial</a>
             {" "}
           </div>
           {" "}
@@ -96,7 +96,7 @@ export default function Pricing() {
               {" "}
             </ul>
             {" "}
-            <a href="https://smbmarket.com/#pricing-plans" className="btn btn-ghost btn-lg">Start free trial</a>
+            <a href="/start" className="btn btn-ghost btn-lg">Start free trial</a>
             {" "}
           </div>
           {" "}

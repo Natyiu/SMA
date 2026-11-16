@@ -30,9 +30,9 @@ export default function Nav() {
         {" "}
         <div className="nav-cta">
           {" "}
-          <a href="https://smbmarket.com/" className="login">Log in</a>
+          <a href="/start" className="login">Log in</a>
           {" "}
-          <a href="#pricing" className="btn btn-dark">Start free trial</a>
+          <a href="/start" className="btn btn-dark">Start free trial</a>
           {" "}
         </div>
         {" "}

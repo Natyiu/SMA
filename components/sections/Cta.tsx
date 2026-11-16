@@ -15,7 +15,7 @@ export default function Cta() {
         </p>
         {" "}
         <div className="hero-actions">
-          <a href="https://smbmarket.com/#pricing-plans" className="btn btn-white btn-lg">Start your 7-day free trial</a>
+          <a href="/start" className="btn btn-white btn-lg">Start your 7-day free trial</a>
         </div>
         {" "}
         <p className="hero-note">Free for 7 days<span>·</span>Cancel anytime<span>·</span>$67/mo after</p>

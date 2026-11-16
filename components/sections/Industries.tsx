@@ -20,7 +20,7 @@ export default function Industries() {
           {" "}
           <div className="ic-ctrl">
             {" "}
-            <a href="#marketplace" className="btn btn-dark">
+            <a href="/start" className="btn btn-dark">
               Browse all listings{" "}
               <svg viewBox="0 0 16 16" fill="none" style={{ width: "12px", height: "12px" }}>
                 <path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />

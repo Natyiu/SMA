@@ -32,13 +32,13 @@ export default function Footer() {
             <h6>Company</h6>
             <a href="#compare">Compare</a>
             <a href="#faq">FAQ</a>
-            <a href="https://smbmarket.com/">Contact us</a>
+            <a href="/start">Contact us</a>
           </div>
           {" "}
           <div className="foot-col">
             <h6>Legal</h6>
-            <a href="https://smbmarket.com/">{"Terms & Conditions"}</a>
-            <a href="https://smbmarket.com/">Privacy Policy</a>
+            <a href="/start">{"Terms & Conditions"}</a>
+            <a href="/start">Privacy Policy</a>
           </div>
           {" "}
         </div>

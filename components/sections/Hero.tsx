@@ -32,7 +32,7 @@ export default function Hero() {
             {" "}businesses for sale, plus the deal tools, live coaching, and community to take you from discovery to close.
           </p>
           {" "}
-          <div className="hero-actions">{" "}<a href="#pricing" className="btn btn-primary btn-lg">Find My Business</a>{" "}</div>
+          <div className="hero-actions">{" "}<a href="/start" className="btn btn-primary btn-lg">Find My Business</a>{" "}</div>
           {" "}
         </div>
         {" "}
@@ -49,7 +49,7 @@ export default function Hero() {
           {" "}
           <div className="hc-grid">
             {" "}
-            <a className="hc" href="https://smbmarket.com/#feed" data-cat="service">
+            <a className="hc" href="/start" data-cat="service">
               {" "}
               <div className="hc-img" style={{ backgroundImage: "url(/images/listings/dental.jpg)" }}><span className="hc-new"><i />New today</span></div>
               {" "}
@@ -75,7 +75,7 @@ export default function Hero() {
               {" "}
             </a>
             {" "}
-            <a className="hc" href="https://smbmarket.com/#feed" data-cat="automotive">
+            <a className="hc" href="/start" data-cat="automotive">
               {" "}
               <div className="hc-img" style={{ backgroundImage: "url(/images/listings/gas-station.jpg)" }}><span className="hc-new"><i />New today</span></div>
               {" "}
@@ -101,7 +101,7 @@ export default function Hero() {
               {" "}
             </a>
             {" "}
-            <a className="hc" href="https://smbmarket.com/#feed" data-cat="manufacturing">
+            <a className="hc" href="/start" data-cat="manufacturing">
               {" "}
               <div className="hc-img" style={{ backgroundImage: "url(/images/listings/fabricator.jpg)" }}><span className="hc-new"><i />New today</span></div>
               {" "}

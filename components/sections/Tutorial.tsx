@@ -22,7 +22,7 @@ export default function Tutorial() {
           {" "}
           <div className="tp-player">
             {" "}
-            <video className="tp-v" preload="metadata" playsInline poster="/images/smb-poster.jpg"><source src="/images/smb.mp4" type="video/mp4" /></video>
+            <video className="tp-v" preload="metadata" playsInline poster="/images/smb-poster.jpg"><source src="https://images.smbmarket.com/live-call-promo/GMT20260608-220157_Recording_3440x1440.mp4" type="video/mp4" /></video>
             {" "}
             <button className="tp-cover tn" aria-label="Play the tutorial">
               {" "}
