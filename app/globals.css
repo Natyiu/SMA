@@ -1754,14 +1754,14 @@ html .st-copy h1{font-family:"Geist",ui-sans-serif,system-ui,sans-serif !importa
   .foot-bot{flex-direction:column;gap:6px;padding-top:20px}
 }
 
-/* wider side gutters on phones (was 16px) */
+/* wider side gutters on phones (was 16px, now 28px) */
 @media (max-width:720px){
-  html .wrap{padding-left:24px;padding-right:24px}
-  html .cta{padding-left:24px;padding-right:24px}
-  html .ic-track{--gut:24px}
-  html .st-wrap{padding-left:24px;padding-right:24px}
-  html .st-nav{padding-left:24px;padding-right:24px}
-  html .nav-menu:not([hidden]){padding-left:24px;padding-right:24px}
+  html .wrap{padding-left:28px;padding-right:28px}
+  html .cta{padding-left:28px;padding-right:28px}
+  html .ic-track{--gut:28px}
+  html .st-wrap{padding-left:28px;padding-right:28px}
+  html .st-nav{padding-left:28px;padding-right:28px}
+  html .nav-menu:not([hidden]){padding-left:28px;padding-right:28px}
 }
 
 /* keep the nav logo on one line on narrow phones */
@@ -1797,4 +1797,17 @@ html .st-copy h1{font-family:"Geist",ui-sans-serif,system-ui,sans-serif !importa
   .cm{--c:50px;padding:14px 10px 12px}
   .cm-row>.cm-f{font-size:13px;padding-right:8px}
   .cm-t{font-size:11.5px}
+}
+
+/* reviews: photo avatars, reviewer row left-aligned */
+img.ini{object-fit:cover;padding:0;flex:none}
+.rv-avs img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid #fff;margin-left:-8px}
+.rv-avs img:first-child{margin-left:0}
+html .review .who{justify-content:flex-start;text-align:left}
+
+/* phones: section headings read left-aligned */
+@media (max-width:720px){
+  html .section-head,html .section-head.center{text-align:left !important;margin:0 !important;max-width:none}
+  html .section-head :is(h2,p,.lead){text-align:left !important;margin-left:0 !important;margin-right:0 !important}
+  html .ic-head{align-items:flex-start;text-align:left}
 }

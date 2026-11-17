@@ -24,7 +24,7 @@ export default function Reviews() {
             {" "}
             <p>Loved by buyers</p>
             {" "}
-            <div className="rv-avs"><span>LP</span><span>GG</span><span>ET</span><span>JT</span></div>
+            <div className="rv-avs"><img src="/images/people/lauren.jpg" alt="" /><img src="/images/people/gina.jpg" alt="" /><img src="/images/people/ethan.jpg" alt="" /><img src="/images/people/josh-t.jpg" alt="" /></div>
             {" "}
             <small>From SMB Market members</small>
             {" "}
@@ -46,7 +46,7 @@ export default function Reviews() {
                 Josh is a natural teacher and really cares about helping others be successful. The time saved on the acquisition learning curve and the aggregation is worth every penny.
               </p>
               {" "}
-              <div className="who"><span className="ini">LP</span><div><b>Lauren Potter</b><small>May 2026</small></div></div>
+              <div className="who"><img className="ini" src="/images/people/lauren.jpg" alt="" /><div><b>Lauren Potter</b><small>May 2026</small></div></div>
               {" "}
             </div>
             {" "}
@@ -64,7 +64,7 @@ export default function Reviews() {
                 SMB Market is my daily search engine. It feeds my acquisition pipeline and keeps my deals organized. I really like the deal calculator for figuring real numbers.
               </p>
               {" "}
-              <div className="who"><span className="ini">GG</span><div><b>Gina Gentile</b><small>June 2026</small></div></div>
+              <div className="who"><img className="ini" src="/images/people/gina.jpg" alt="" /><div><b>Gina Gentile</b><small>June 2026</small></div></div>
               {" "}
             </div>
             {" "}
@@ -82,7 +82,7 @@ export default function Reviews() {
                 I just got into searching for acquisitions and I'm grateful to have a tool like this. Aggregating deals across multiple platforms saves me hours.
               </p>
               {" "}
-              <div className="who"><span className="ini">E</span><div><b>Ethan</b><small>June 2026</small></div></div>
+              <div className="who"><img className="ini" src="/images/people/ethan.jpg" alt="" /><div><b>Ethan</b><small>June 2026</small></div></div>
               {" "}
             </div>
             {" "}
@@ -100,7 +100,7 @@ export default function Reviews() {
                 A fantastic aggregator of businesses for sale. The built-in calculator and quick deal info on every listing beat any other search platform I've used. The education library is a bonus.
               </p>
               {" "}
-              <div className="who"><span className="ini">JT</span><div><b>Josh Thomas</b><small>May 2026</small></div></div>
+              <div className="who"><img className="ini" src="/images/people/josh-t.jpg" alt="" /><div><b>Josh Thomas</b><small>May 2026</small></div></div>
               {" "}
             </div>
             {" "}
