@@ -1,4 +1,49 @@
 /* eslint-disable @next/next/no-img-element */
+
+/* Phone version of the comparison: short labels, one checklist, SMB Market as a dark column.
+   Values: "y" = yes, "x" = no, "p" = limited / paid add-on, anything else is shown as text. */
+const MOBILE_ROWS: [string, string, string, string][] = [
+  ["Listings", "80k+", "Own only", "20k+"],
+  ["Off-market deals", "y", "x", "y"],
+  ["Buy box + FitScore", "y", "x", "p"],
+  ["Take-home pay analyzer", "y", "x", "y"],
+  ["CIM analyzer", "y", "x", "x"],
+  ["Deal pipeline CRM", "y", "x", "p"],
+  ["Weekly live coaching", "y", "x", "x"],
+  ["Community deal reviews", "y", "x", "p"],
+  ["Step-by-step curriculum", "y", "x", "x"],
+  ["Price / month", "$67", "Varies", "$199"],
+];
+
+function Mark({ v }: { v: string }) {
+  if (v === "y") return <i className="cm-y" aria-label="Yes"><svg viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2l2.2 2.2L9.5 3.6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg></i>;
+  if (v === "x") return <i className="cm-x" aria-label="No"><svg viewBox="0 0 12 12"><path d="M3.5 3.5l5 5M8.5 3.5l-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" /></svg></i>;
+  if (v === "p") return <i className="cm-p" aria-label="Limited or paid add-on" />;
+  return <b className="cm-t">{v}</b>;
+}
+
+function MobileCompare() {
+  return (
+    <div className="cm" role="table" aria-label="SMB Market compared with BizBuySell and BizScout">
+      <div className="cm-row cm-head" role="row">
+        <span role="columnheader" />
+        <span role="columnheader" className="cm-us">SMB Market</span>
+        <span role="columnheader">BizBuy<wbr />Sell</span>
+        <span role="columnheader">Biz<wbr />Scout</span>
+      </div>
+      {MOBILE_ROWS.map(([label, ...vals]) => (
+        <div className="cm-row" role="row" key={label}>
+          <span role="rowheader" className="cm-f">{label}</span>
+          {vals.map((v, i) => (
+            <span role="cell" key={i} className={i === 0 ? "cm-us" : undefined}><Mark v={v} /></span>
+          ))}
+        </div>
+      ))}
+      <p className="cm-key"><i className="cm-p" /> Limited or paid add-on. BizBuySell is free to browse, paid to engage.</p>
+    </div>
+  );
+}
+
 export default function Compare() {
   return (
     <>
@@ -14,7 +59,7 @@ export default function Compare() {
             {" "}
             <span className="kicker">Compare</span>
             {" "}
-            <h2>Other sites help you browse.<br />This one helps you close.</h2>
+            <h2>Other sites help you browse. <br />This one helps you close.</h2>
             {" "}
             <p className="lead cmp-lead">
               Finding a business was never the hard part.{" "}
@@ -27,7 +72,7 @@ export default function Compare() {
         </figure>
         {" "}
         <div className="table-wrap reveal">
-          {" "}
+          <MobileCompare />
           <div className="table-scroll">
             {" "}
             <table>

@@ -221,7 +221,7 @@ export default function Tutorial() {
                 </button>
               </li>
             </ol>
-            {" "}
+            <button type="button" className="tp-more" aria-expanded="false">Show all 10 lessons</button>
           </aside>
           {" "}
         </div>
